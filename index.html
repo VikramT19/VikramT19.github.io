@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Vikram Thangavel</title>
+<link rel="icon" href="https://vikramt19.github.io/images/Circle.jpg" type="image/gif" sizes="16x16">
 </head>
 
 <style>
@@ -33,21 +34,63 @@ hr.solid {
 img{
     border:unset;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h2{
+    font-family: Georgia, serif;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+ul li { 
+    padding: 50px 0px; 
 }
 
 </style>
 
+<header>
+    <h1>Vikram Thangavel</h1>
+    <p>Computer Science student studying at York University. Knowledge in Javascript, HTML, Cascading Style Sheets (CSS), Java, C, Linux and Shell scripting.</p>
+    <hr class="solid">
+</header>
+
 <body>
-
-<h1>Vikram Thangavel</h1>
-<p>Computer Science student studying at York University. Knowledge in Javascript, HTML, Cascading Style Sheets (CSS), Java, C, Linux and Shell scripting.</p>
-<hr class="solid">
-
-<img src="https://vikramt19.github.io/images/Vikram.jpg" alt="Vikram" width="504" height="672">
-
-
+    <div class="row">
+        <div class="column">
+          <img src="https://vikramt19.github.io/images/Vikram.jpg" alt="Vikram" width="504" height="672">
+        </div>
+        <div class="column">
+            <h2>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/vikram-thangavel-179a73202/">LinkedIn</a></li>
+                    <li><a href="https://github.com/VikramT19">GitHub</a></li>
+                    <li><a href="https://vikramt19.github.io/docs/resume.pdf">Resume</a></li>
+                </ul>  
+            </h2>
+        </div>
+    </div>
 </body>
 </html>
